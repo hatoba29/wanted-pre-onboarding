@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+}
+
+#App {
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .main-bar {
+    width: 87.72%;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .nav-bar,
+  .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-top {
+    .hamburger {
+      height: 22px;
+      margin-top: -2px;
+      margin-right: 15px;
+      img {
+        width: 17px;
+        height: 14px;
+        object-fit: contain;
+        vertical-align: middle;
+      }
+    }
+
+    .logo img {
+      height: 17px;
+    }
+  }
+
+  .menu {
+    li {
+      position: relative;
+      display: inline-block;
+      padding: 15px;
+      vertical-align: middle;
+
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+    em {
+      position: absolute;
+      top: 10px;
+      right: -5px;
+    }
+  }
+
+  .aside {
+    height: 50px;
+    padding: 9px 0;
+    ul {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      button {
+        margin-top: 5px;
+        padding: 0 10px;
+      }
+    }
+  }
+  .profile-button {
+    height: 32px;
+  }
+  .avatar-border {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    border-radius: 50%;
+    border: 1px solid #e1e2e3;
+    background-color: white;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-image {
+    width: 28px;
+    height: 28px;
+    background-image: url("img/avatar.png");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  li.left-division {
+    display: inline-flex;
+  }
+  .left-division:before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #e1e2e3;
+    margin: 10px;
+  }
+  .dashboard-button {
+    display: inline-block;
+    height: 30px;
+    margin-left: 15px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    padding: 0 10px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #666;
+  }
+}
