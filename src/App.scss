@@ -132,4 +132,38 @@ body {
     line-height: 30px;
     color: #666;
   }
+
+  .top-banner {
+    position: relative;
+    padding: 0 50px;
+  }
+  .slick-track {
+    width: 9756px;
+  }
+  .slick-slide {
+    width: 1060px;
+    padding: 0 12px;
+    float: left;
+    min-height: 1px;
+    box-sizing: content-box;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    top: 120px;
+    opacity: 0.5;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prev {
+    left: calc((100% - 1210px) / 2);
+  }
+  .next {
+    right: calc((100% - 1200px) / 2);
+  }
 }
